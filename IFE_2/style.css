@@ -1,0 +1,33 @@
+body{
+	margin: 0;
+	padding: 0;
+	font-family: Microsoft Yahei;
+	background-color: #E6E6E6;
+	width: 90%;	
+}
+.container{
+	width: 1000px;
+	margin: 0 auto;
+}
+
+.article{	
+	background: white;
+	padding: 10px 20px;
+	margin: 20px 0;
+	box-shadow: 2px 2px 2px rgba(0,0,0,.6);
+}
+
+.article p.title2{
+	font-size: 1.2em;
+	color: #757575
+}
+
+.article p.author{
+	font-size: 0.875em;
+	color: #757575
+}
+
+.article .content p{
+	text-indent: 2em;
+	margin: 5px 0;
+}
