@@ -45,10 +45,13 @@ body{
 	margin-bottom: 20px;
 }
 
+.article .pic p{
+	margin:10px 0;
+}
+
 .article .pic img{
-	width: 120px;
-	height: 100px;
-	margin-top: 1px;
+	width: 140px;
+	height: 100px;	
 }
 
 .article .declist{
