@@ -1,0 +1,31 @@
+.container{
+	margin: 0 auto;
+	width: 90%;	
+	border: 1px solid gray;
+	display: block;
+	background: #DEDEDE;
+}
+
+.left{
+	display: block;
+	margin: 20px;
+	width: 120px;
+	height: 100px;
+	border: 1px solid gray;
+	float: left;
+}
+
+.main{
+	width: 500px;
+	height: 100px;
+	clear: both;
+}
+
+.right{
+	display: block;
+	margin: 20px;
+	width: 120px;
+	height: 500px;
+	border: 1px solid gray;
+	float: right;
+}
