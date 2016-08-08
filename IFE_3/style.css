@@ -1,5 +1,6 @@
 .container{
-	margin: 0 auto;
+	margin: 20px auto;
+	padding: 20px;
 	width: 90%;	
 	border: 1px solid gray;
 	display: block;
@@ -9,8 +10,8 @@
 .left{
 	display: block;
 	margin: 20px;
-	width: 120px;
-	height: 100px;
+	width: 200px;
+	height: 130px;
 	border: 1px solid gray;
 	float: left;
 }
