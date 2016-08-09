@@ -3,30 +3,26 @@
 	padding: 20px;
 	width: 90%;	
 	border: 1px solid gray;
-	display: block;
-	background: #DEDEDE;
+	text-align: center;
+	background: #DEDEDE;		
 }
 
-.left{
-	display: block;
-	margin: 20px;
-	width: 200px;
-	height: 130px;
-	border: 1px solid gray;
-	float: left;
+.left{		
+	width: 200px;	
+	margin-left: -100%;
+	border: 1px solid gray;	
+	float: left;	
 }
 
 .main{
-	width: 500px;
-	height: 100px;
-	clear: both;
+	width: 100%;		
+	border: 1px solid gray;		
+	float: left;	
+	margin-right: 141px;
 }
 
 .right{
-	display: block;
-	margin: 20px;
-	width: 120px;
-	height: 500px;
+	width: 120px;	
 	border: 1px solid gray;
-	float: right;
+	margin-left: -200%;	
 }
