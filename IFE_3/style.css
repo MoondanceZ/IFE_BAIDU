@@ -2,7 +2,7 @@
 body{
 	padding: 0;
 	margin: 0;
-	font-family: "Comic Sans MS"
+	font-family: "Comic Sans MS","微软雅黑","sans-serif";
 }
 .container{
 	margin: 20px auto;
@@ -24,9 +24,8 @@ body{
 	margin: 20px;
 	float: left;	
 }
-.left span{	
-	font-size: .875em;
-	float: right;
+.left p{		
+	font-weight: 700;	
 }
 .main{		
 	margin: 0px 140px 0px 220px;
