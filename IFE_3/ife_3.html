@@ -1,15 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<meta charset="UTF-8">
 	<title>三栏式布局</title>
 	<link rel="stylesheet" href="style.css">
+	<style>
+		#left,
+		#right {
+			float: left;
+			width: 220px;
+			height: 200px;
+			background: blue;
+		}
+		
+		#right {
+			float: right;
+		}
+		
+		#main {
+			margin: 0 230px;
+			background: red;
+			height: 200px;
+		}
+	</style>
 </head>
-<body>
-	<div class="container">		
-		<div class="main">main--------main--------main--------main--------main--------main--------main--------main--------main--------main--------main--------main--------</div>
-		<div class="left">lefter</div>
-		<div class="right">right</div>
-	</div>
+
+<body>	
+	<div id="left">left </div>
+	<div id="right">right</div>
+	<div id="main">mian</div>
+
 </body>
+
 </html>
