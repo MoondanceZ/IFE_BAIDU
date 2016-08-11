@@ -41,6 +41,12 @@ body{
 	float: right;	
 }
 
+.right img{
+	width: 80px;
+	height: 80px;
+	margin: 20px 20px 0 20px;
+}
+
 .clearfix:after {       /*在类名为“clearfix”的元素内最后面加入内容；*/
     content: ".";     /*内容为“.”就是一个英文的句号而已。也可以不写。*/
     display: block;   /*加入的这个元素转换为块级元素。*/
