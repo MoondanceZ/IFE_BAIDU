@@ -120,13 +120,16 @@ body{
 .side form .right .prompt{
 	line-height: 2em;
 	color: #757575;
-	font-size: 0.875em;
+	font-size: 0.875em;		
 }
 
 .side form .txtarea{
-	height: auto;	
+	height: auto;		
 }
 
+.side form .txtarea textarea{
+	resize: none;
+}
 .side input[type='submit']{
 	width: 200px;
 	height: 40px;
