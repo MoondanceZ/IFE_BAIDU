@@ -39,7 +39,6 @@
 					</ul>
 				</div>
 			</div>
-
 			<div class="article">
 				<h2>图片</h2>
 				<ul class="pic">
@@ -61,7 +60,6 @@
 					</li>
 				</ul>
 			</div>
-
 			<div class="article">
 				<h2>文章一级标题</h2>
 				<p class="title2">文章二级标题</p>
@@ -110,90 +108,84 @@
 		</div>
 		<div class="side">
 			<h2>侧边栏---标题</h2>
-			<div class="reg">
-				<form>
+			<form action="" class="reg">
+				<div class="row">
 					<div class="left">
 						请输入邮箱地址
 					</div>
 					<div class="right">
 						<input type="text" placeholder="example@example.com" />
 					</div>
-
+				</div>
+				<div class="row">
+					<div class="left"></div>
+					<div class="right">
+						<span class="prompt">邮箱地址请按正确的格式输入</span>						
+					</div>
+				</div>
+				<div class="row">
 					<div class="left">
 						请输入密码
 					</div>
 					<div class="right">
 						<input type="text" placeholder="example@example.com" />
 					</div>
+				</div>
+				<div class="row">
+					<div class="left">
+						请输入重复密码
+					</div>
+					<div class="right">
+						<input type="text" placeholder="example@example.com" />
+					</div>
+				</div>
+				<div class="row">
 					<div class="left"></div>
-					<div class="right"></div>
-					<div class="left"></div>
-					<div class="right"></div>
-					<div class="left"></div>
-					<div class="right"></div>
-
-
-					<table>
-						<tr>
-							<td>请输入邮箱地址</td>
-							<td><input type="text" placeholder="example@example.com" /></td>
-						</tr>
-						<tr>
-							<td></td>
-							<td><span class="inputinfo">邮箱格式请输入正确</span></td>
-						</tr>
-						<tr>
-							<td>请输入密码</td>
-							<td><input type="text" placeholder="example@example.com" /></td>
-						</tr>
-						<tr>
-							<td>请输入重复密码</td>
-							<td><input type="password" placeholder="password" maxlength="16" /></td>
-						</tr>
-						<tr>
-							<td></td>
-							<td><span class="inputinfo">请输入6-16位数密码</span></td>
-						</tr>
-						<tr>
-							<td>性别</td>
-							<td>
-								<input type="radio" name="sex">男
-								<input type="radio" name="sex">女
-							</td>
-						</tr>
-						<tr>
-							<td>城市</td>
-							<td>
-								<select name="" id="">
-									<option value="">城市1</option>
-									<option value="">城市2</option>
-									<option value="">城市3</option>
-								</select>
-							</td>
-						</tr>
-						<tr>
-							<td>爱好</td>
-							<td>
-								<input type="checkbox" name="hobby">爱好1
-								<input type="checkbox" name="hobby">爱好2
-								<input type="checkbox" name="hobby">爱好3
-							</td>
-						</tr>
-						<tr>
-							<td>个人描述</td>
-							<td>
-								<textarea name="" id="" cols="80" rows="10">
-									牛逼牛逼牛逼牛逼牛逼牛逼牛逼牛逼牛逼牛逼牛逼牛逼牛逼牛逼牛逼牛逼a  a a s
-									牛逼牛逼牛逼牛逼牛逼牛逼牛逼牛逼
-								</textarea>
-							</td>
-						</tr>
-					</table>
-					<input type="submit" value="确认提交">
-				</form>
-			</div>
+					<div class="right">
+						<span class="prompt">密码为6-16位数字和英文</span>
+					</div>
+				</div>
+				<div class="row">
+					<div class="left">性别</div>
+					<div class="right">
+						<input type="radio" name="sex">男
+						<input type="radio" name="sex">女
+					</div>
+				</div>
+				<div class="row">
+					<div class="left">城市</div>
+					<div class="right">
+						<select name="" id="">
+							<option value="">城市1</option>
+							<option value="">城市2</option>
+							<option value="">城市3</option>
+						</select>
+					</div>
+				</div>
+				<div class="row">
+					<div class="left">
+						爱好
+					</div>
+					<div class="right">
+						<input type="checkbox" name="hobby">爱好1
+						<input type="checkbox" name="hobby">爱好2
+					</div>
+				</div>
+				<div class="row">
+					<div class="left">
+						个人描述
+					</div>
+					<div class="right txtarea">
+						<textarea name="" id="" cols="26" rows="10">
+							C# is the same thing to programming languages that .NET is to the Windows environment. 
+						</textarea>
+					</div>
+				</div>				
+			</form>			
+			<input type="submit" name="" value="提交" id="bntSave">
 		</div>
 	</div>
+	<div class="clearfix"></div>
 	<footer>
 		<span class="copy">&copy; 版权所有</span>
 	</footer>
