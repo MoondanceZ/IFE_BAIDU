@@ -1,3 +1,8 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
 .fontHeiti {
     font-family: '黑体';
 }
@@ -122,10 +127,14 @@
     padding: 0;
 }
 
-.row-1 .right span{
+.row-1 .right p{
     color: #cc8091;
 }
 
-.row-1 .right span.c1{
+.row-1 .right p.c1{
     font-size: 55px;
+}
+
+.row-1 .right .css-1,.css-2{
+    display: inline-block;    
 }
