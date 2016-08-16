@@ -163,3 +163,8 @@
     width: 132px;
     height: 166px;
 }
+
+.row-2 p[class$="-title"]{
+    font-size: 16px;
+    text-decoration: underline;    
+}
