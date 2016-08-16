@@ -138,3 +138,28 @@
 .row-1 .right .css-1,.css-2{
     display: inline-block;    
 }
+
+.row-2{
+    width: 641px;
+    height: 166px;    
+    margin-top: 40px;
+}
+.row-2>div{
+    margin-right: 25px;
+    float: left;
+}
+
+.row-2 .what{
+    width: 228px;
+    height: 166px;
+}
+
+.row-2 .when{
+    width: 204px;
+    height: 166px;
+}
+
+.row-2 .how{
+    width: 132px;
+    height: 166px;
+}
