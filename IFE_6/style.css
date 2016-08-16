@@ -15,6 +15,10 @@
     font-family: '楷体';
 }
 
+.fontSongti{
+    font-family: "宋体";
+}
+
 .container {
     width: 980px;
     height: 1386px;
@@ -247,9 +251,12 @@
 
 .row-3 .left-img{
     float: right;
-    margin: 96px 0 16px 16px;
+    margin: 12px 0 2px 12px;
 }
 
+.row-3 .left-content{
+    font-size: 12px;
+}
 .lh16{
     line-height: 16px;
 }
