@@ -59,9 +59,8 @@
     padding: 4px;
 }
 
-.main {
-    /*border: 1px solid red;*/
-    margin: 40px 44px;
+.main {    
+    margin: 40px 44px 0 44px;
 }
 
 .row-1 {
@@ -268,6 +267,7 @@
     height: 256px;
     background-image: url("image/right-pc.png");   
     position: relative;
+    margin-bottom: 30px;
 }
 
 .row-3 .top-footer-info{
@@ -276,7 +276,14 @@
     background-color: rgba(4,0,0,.4);    
     position: absolute;
     bottom: 0;
-    left: 0;
+    left: 0;    
+}
+
+.row-3 .top-footer-info-p{
+    height: 44px;
+    margin:8px 22px 0;
+    border-left: 3px solid #72b16a;    
+    padding-left: 10px;
 }
 
 .row-3 .top-footer-info-1{
@@ -287,9 +294,115 @@
 .row-3 .top-footer-info-2{
     font-size: 12px;
     font-style: italic;
-    color: #72b16a;
+    color: #72b16a;    
+    padding-left: 10px;
 }
 
+.row-3 .top-bottom{
+    width: 458px;   
+    height: 318px;
+    background: #eeedd6;
+}
+
+.row-3 .top-bottom-1{    
+    padding-left: 22px;
+}
+
+.row-3 .top-bottom-1 p{    
+    color: #5a5b5b;
+}
+
+.row-3 .top-bottom-1 .p1{
+    padding-top: 30px;
+}
+
+.row-3 .top-bottom-1 .p2{
+    padding: 24px 0;
+}
+
+.row-3 .top-bottom-1 .p3{
+    padding-bottom: 26px;
+}
+
+.row-3 .top-bottom-1 .suffix{
+    font-size: 14px;
+    font-style: italic;
+}
+
+.row-3 .top-bottom-1 em{
+    display: block;
+    border: 6px solid;
+    border-color:transparent transparent #11456c transparent;
+    float: left;
+    margin-right: 6px;    
+}
+
+.row-3 .top-bottom-2-left{
+    width: 260px;
+    height: 160px;
+    background-color: #d45d5c;
+    display: inline-block;
+    
+}
+
+.row-3 .en-num{
+    height: 86px;    
+    border-left: 2px solid #fff;
+    float: right;
+    margin-top: 37px;
+    margin-right: 10px;
+    padding-left: 10px;
+}
+
+.row-3 .big{
+    font-size: 21px;
+    font-style: italic;
+    color: #fff;
+    padding-right:10px;    
+}
+
+.row-3 .small{
+    font-size: 12px;    
+    color: #fff;
+    padding-left: 8px;
+}
+
+.row-3 .top-bottom-2-left span{
+    display:inline-block;
+    font-size: 110px;
+    color: #fff;    
+    line-height: 160px;
+}
+
+.row-3 .top-bottom-2-right{
+    width: 162px;
+    height: 118px;    
+    display: inline-block;
+}
+
+.row-3 blockquote {
+    width: 180px;
+    display: inline-block;
+    line-height: 20px;
+    margin-left: 10px;
+}
+
+.row-3 blockquote span{
+    font-size: 14px;
+    font-style: italic;
+    line-height: 16px;    
+    color: #5a5b5b;
+}
+
+.row-3 .left-quote {
+    vertical-align: baseline;
+}
+
+.footer span{
+    font-size: 12px;
+    color: #d45d5c;
+    margin-left: 860px;
+}
 .lh16{
     line-height: 16px;
 }
