@@ -210,7 +210,8 @@
 }
 
 .row-3 .left{    
-    width: 415px;        
+    width: 415px;     
+    float: left;   
 }
 
 .row-3 .left-head{
@@ -257,6 +258,38 @@
 .row-3 .left-content{
     font-size: 12px;
 }
+
+.row-3 .right{
+    width: 458px;
+    float: right;
+}
+
+.row-3 .right-top {
+    height: 256px;
+    background-image: url("image/right-pc.png");   
+    position: relative;
+}
+
+.row-3 .top-footer-info{
+    width: 458px;
+    height: 60px;
+    background-color: rgba(4,0,0,.4);    
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.row-3 .top-footer-info-1{
+    font-size: 26px;
+    color: #fff;
+}
+
+.row-3 .top-footer-info-2{
+    font-size: 12px;
+    font-style: italic;
+    color: #72b16a;
+}
+
 .lh16{
     line-height: 16px;
 }
