@@ -21,7 +21,7 @@
     position: relative;
 }
 
-.header img{
+.header .head-logo{
     position: absolute;
     top: 14px;
     left: 59px;
@@ -48,6 +48,19 @@ ul.nav li {
     box-sizing: border-box;
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
+}
+
+ul.nav li:last-child>a{
+    display: block;
+    color: #e74f4d;
+    position: relative;
+}
+
+ul.nav li:last-child img{
+    position: absolute;
+    display: inline;
+    top: 18px;
+    left: 20px;
 }
 
 ul.nav a {
