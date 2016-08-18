@@ -73,6 +73,20 @@ a{
     text-align: center;
 }
 
+.clearfix { 
+  *zoom: 1; 
+} 
+
+.clearfix:before, .clearfix:after { 
+  display: table; 
+  line-height: 0; 
+  content: ""; 
+} 
+
+.clearfix:after { 
+  clear: both; 
+} 
+
 .header {
     height: 56px;
     position: relative;
@@ -173,6 +187,9 @@ ul.nav .cur {
     padding: 46px 0;
 }
 
+.section-2 {
+    padding-bottom: 68px;
+}
 .section-2 p{
     width: 154px;
     font-size: 14px;
@@ -180,6 +197,21 @@ ul.nav .cur {
     color: #4d5050;        
 }
 
-.section-2 div.row:not(:first-child)>div{
+.section-2 div.row:not(:first-child)>div:not(:last-child){
     border-right: 3px solid #888a8a;
+}
+
+.section-3 {
+    height: 360px;
+    background-color: #edecec;
+}
+
+.section-3 img {
+    padding-top: 88px;
+    padding-bottom: 48px;
+}
+
+.section-3 p{
+    color: #4d5050;
+    font-size: 56px;
 }
