@@ -44,6 +44,35 @@ a{
     text-decoration: none;
 }
 
+.row {
+    width: 1280px;
+    clear: both;
+}
+
+.col-md-1 {
+    width: 1280px;
+}
+
+.col-md-3 {
+    width: 320px;
+    float: left;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+.col-md-4 {
+    width: 106.66px;
+}
+
+.col-md-6 {
+    width: 640px;
+}
+
+.textalign-center{
+    text-align: center;
+}
+
 .header {
     height: 56px;
     position: relative;
@@ -138,4 +167,19 @@ ul.nav .cur {
 
 .section-1 .info a:hover {
     background-color: #c34240;
+}
+
+.section-2 img {
+    padding: 46px 0;
+}
+
+.section-2 p{
+    width: 154px;
+    font-size: 14px;
+    margin: 0 auto;
+    color: #4d5050;        
+}
+
+.section-2 div.row:not(:first-child)>div{
+    border-right: 3px solid #888a8a;
 }
