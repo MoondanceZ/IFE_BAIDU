@@ -3,6 +3,10 @@
     padding: 0;
 }
 
+img{
+    border: 0px;
+}
+
 .container {
     width: 100%;
     min-width: 1280px;
