@@ -323,3 +323,12 @@ ul.nav .cur {
 .section-6 {
     height: 566px;
 }
+
+.section-6 .left-img{
+    float: left;
+}
+
+.section-6 .right-info {
+    float: left;
+    margin-left: 20px;
+}
