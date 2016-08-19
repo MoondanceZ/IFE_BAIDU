@@ -49,20 +49,27 @@ a{
     clear: both;
 }
 
+.col {
+    float: left;
+}
+
 .col-md-1 {
     width: 100%;
 }
 
+.col-md-2 {
+    width: 16.6666667%;
+}
+
 .col-md-3 {
-    width: 25%;
-    float: left;
+    width: 25%;    
     box-sizing: border-box;
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
 }
 
 .col-md-4 {
-    width: 33.33%;
+    width: 33.33333333%;
 }
 
 .col-md-6 {
@@ -257,4 +264,9 @@ ul.nav .cur {
 .section-4 p:last-child{
     font-size: 15px;    
     color: #fff;
+}
+
+.section-5 {
+    height: 605px;
+    background-color: #edecec;
 }
