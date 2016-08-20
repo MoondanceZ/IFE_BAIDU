@@ -326,9 +326,60 @@ ul.nav .cur {
 
 .section-6 .left-img{
     float: left;
+    width: 851px;
+    height: 566px;
 }
 
-.section-6 .right-info {
-    float: left;
-    margin-left: 20px;
+.section-6 .right-info h2{
+    color: #656666;
+    padding-top: 164px;
+    padding-bottom: 30px;
+}
+
+.section-6 .right-info p {
+    color: #adabab;    
+    line-height: 200%;
+}
+
+.section-6 .right-info a{
+    width: 106px;
+    height: 34px;
+    line-height: 34px;
+    display: inline-block;
+    color: #e74f4d;
+    border: 2px solid #e74f4d;
+    margin: 50px 0 24px 0;
+}
+
+.section-6 .right-info li{
+    display: inline-block;
+}
+
+.section-6 .right-info a:hover{
+    background: #e74f4d;
+    color: #fff;
+}
+
+.section-6 .right-info .circle {
+    display: inline-block;
+    width: 14px;
+    height: 14px;         
+    border: 3px solid #83868d;
+    border-radius: 10px;
+}
+
+.section-6 .right-info .circle.cur{
+    background: #83868d;
+}
+
+.section-6 .right-info .circle:hover{
+    cursor: pointer;
+}
+
+.section-6 .right-info ul{
+    list-style: none;
+}
+
+.section-6 .right-info span {
+        color: #e74f4d;
 }
