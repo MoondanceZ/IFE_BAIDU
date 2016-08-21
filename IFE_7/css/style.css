@@ -236,6 +236,15 @@ ul.nav li {
     -webkit-box-sizing: border-box;
 }
 
+ul.nav li:not(:last-child):hover {
+    background-color: #e74f4d;
+    color: #fff;
+}
+
+ul.nav li:hover a {
+    color: #fff;
+}
+
 ul.nav li:last-child>a {
     display: block;
     color: #e74f4d;
@@ -253,10 +262,6 @@ ul.nav a {
     text-decoration: none;
     color: #83868d;
     font-size: 15px;
-}
-
-ul.nav a:hover {
-    opacity: .6;
 }
 
 ul.nav .cur {
@@ -372,11 +377,84 @@ ul.nav .cur {
     transform: scaleX(1);
 }
 
-.section-4 p:last-child {
+.section-4 p {
     font-size: 15px;
     color: #fff;    
 }
 
+.section-4 .search-city {
+    margin: 52px 126px 134px 126px;
+}
+
+.section-4 .pull-down {
+    height: 36px;
+    width: 238px;
+    background: #fff;
+    line-height: 36px;
+    color: #adabab;       
+    margin: 0 auto;
+}
+
+.section-4 .pull-down:hover .pull-down-show{    
+    border: 1px solid #c34240; 
+}
+
+.section-4 .pull-down:hover ul {
+    display: block;
+    border: 1px solid #c34240;
+}
+
+.section-4 .pull-down span {     
+    display: inline-block;   
+    margin-left: 15px;
+}
+
+.section-4 .pull-down img {    
+    display: inline-block;
+    margin-left: 160px;    
+}
+
+.section-4 .pull-down ul {
+    width: 238px;
+    display: none;
+    list-style: none;
+    background-color: #e3e3e4;    
+    position: absolute;    
+    top: 37px;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+.section-4 .pull-down ul li {
+    padding-left: 26px;
+}
+
+.section-4 .pull-down ul li:hover {
+    background-color: #c34240;
+    color: #fff;
+}
+
+.section-4 .pull-down ul li:hover::before {
+    content: '√';
+    margin-left: -20px;
+    margin-right: 10px;
+}
+
+.section-4 input[type=button] {
+    width: 236px;
+    height: 36px;
+    background: #c34240;
+    color: #fff;
+    border: 0;
+    font-family: "微软雅黑";
+}
+
+.section-4 input[type=button]:hover {
+    background: #fff;
+    color: #c34240;
+    cursor: pointer;
+}
 .section-5 {
     height: 605px;
     background-color: #f7f7f7;
@@ -417,6 +495,7 @@ ul.nav .cur {
 .col-img p {    
     font-size: 14px;
     color: #4d5050;
+    line-height: 200%;
 }
 
 .section-6 {
@@ -583,6 +662,12 @@ ul.nav .cur {
     font-size: 14px;
 }
 
+.section-8 .col.col-md-8 input[type=button]:hover {
+    background-color: #9a9aa5;
+    color: #fff;
+    cursor: pointer;
+}
+
 .section-9 {
     background-color: #32353e;
     color: #fff;
@@ -618,6 +703,7 @@ ul.nav .cur {
 }
 
 .section-9 input[type=button]:hover{    
+    background-color: #4e4d4d;
     cursor: pointer;
 }
 
