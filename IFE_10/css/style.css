@@ -1,25 +1,21 @@
-body{
-	padding: 0;
+*{
+	padding: 20px;
 	margin: 0;
 }
 
-.container {
-	margin: 20px;
+.container {	
 	border: 1px solid gray;
-}
-
-.clearfix, .container:before, .container:after{
-	content: '';
-	display: table;
-	clear: both;
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+	flex-wrap: wrap;
 }
 
 .container>div{
 	width: 150px;	
 	background-color: #f00;
-	border: 1px solid blue;
-	padding: 20px;
-	margin: 40px 20px;
+	border: 1px solid blue;		
+	box-sizing: border-box;	
 }
 
 .container>div:last-child{
@@ -27,19 +23,21 @@ body{
 }
 
 .div-1 {
-	height: 120px;
+	height: 120px;	
+	
 }
 
 .div-2 {
-	height: 100px;
+	height: 100px;	
 }
 
 .div-3 {
-	height: 40px;
+	height: 40px;	
 }
 
 .div-4 {
 	height: 200px;
+	order: -1;
 }
 
 @media (min-width: 640px) {
@@ -47,20 +45,14 @@ body{
 		display: -webkit-flex;
 		display: -moz-flex;
 		display: flex;		
-		/*justify-content: center;*/
-		align-items: center;
+		justify-content: space-between;
+		align-items: center;		
 		flex-flow: row nowrap;		
 	}
-
-	.div-1 {		
-		align-self: flex-start;
-	}
-
-	div-3 {
-		align-self: flex-end;
-	}
-
-	.div-4 {		
-		align-self: flex-end;
+	
+	.div-4 {
+		height: 200px;
+		order: 0;
 	}
 }
+
