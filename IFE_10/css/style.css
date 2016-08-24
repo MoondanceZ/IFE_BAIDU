@@ -47,12 +47,12 @@ body{
 		display: -webkit-flex;
 		display: -moz-flex;
 		display: flex;		
-		/*justify-content: center;*/
+		justify-content: center;
 		align-items: center;
 		flex-flow: row nowrap;		
 	}
 
-	.div-1 {		
+	/*.div-1 {		
 		align-self: flex-start;
 	}
 
@@ -62,5 +62,5 @@ body{
 
 	.div-4 {		
 		align-self: flex-end;
-	}
+	}*/
 }
