@@ -45,6 +45,7 @@
 		display: -webkit-flex;
 		display: -moz-flex;
 		display: flex;		
+<<<<<<< HEAD
 		justify-content: space-between;
 		align-items: center;		
 		flex-flow: row nowrap;		
@@ -53,6 +54,10 @@
 	.div-4 {
 		height: 200px;
 		order: 0;
+		justify-content: center;
+		align-items: center;
+		flex-flow: row nowrap;		
 	}
+
 }
 
