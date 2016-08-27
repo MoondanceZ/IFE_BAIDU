@@ -1,0 +1,14 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.pic {
+    width: 320px;
+    height: 568px;
+    background-color: #ffe872;
+    color: white;
+    font-size: 150px;
+    text-align: center;
+    line-height: 568px;
+}
