@@ -12,3 +12,7 @@ body{
     text-align: center;
     line-height: 568px;
 }
+
+@media screen and (max-width:1024px){
+    
+}
