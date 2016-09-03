@@ -1,0 +1,48 @@
+body{
+    padding: 0;
+    margin: 0;
+}
+
+table {
+    margin: 0 auto;
+    border-collapse: collapse;
+}
+
+table th {
+    background-color: #000;
+    color: #fff;
+}
+
+th:not(:last-child), td:not(:last-child) {
+    border-right: 1px solid #fff;
+}
+
+tr:nth-child(2n+1) {
+    background-color: #d3d3d3;
+}
+
+tr:nth-child(-n+4){
+    color: red;
+}
+
+.input {    
+    width: 400px;
+    margin: 0 auto;
+    margin-top: 40px;
+}
+
+.input input{
+    display: block;
+    margin: 0 auto;    
+    transform: scaleX(1);
+    -webkit-transform: scaleX(1);
+    transition: 1s;
+    -webkit-transition: 1s;
+}
+
+.input input:focus{        
+    transform: scaleX(1.6);
+    -webkit-transform: scaleX(1.6);
+    transition: 1s;
+    -webkit-transition: 1s;
+}
