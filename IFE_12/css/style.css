@@ -36,8 +36,8 @@ tr:nth-child(-n+4){
     margin: 0 auto;    
     transform: scaleX(1);
     -webkit-transform: scaleX(1);
-    transition: 1s;
-    -webkit-transition: 1s;
+    transition: .5s;
+    -webkit-transition: .5s;
 }
 
 .input input:focus{        
@@ -45,4 +45,45 @@ tr:nth-child(-n+4){
     -webkit-transform: scaleX(1.6);
     transition: 1s;
     -webkit-transition: 1s;
+}
+
+.carousel {
+    width: 400px;
+    height: 250px;
+    position: relative;
+    margin: 20px auto;
+}
+
+.carousel ul{
+    list-style: none;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+}
+
+.carousel li{
+    display: inline-block;
+    margin: 5px;
+    padding: 5px;
+    background-color: grey;
+}
+
+.carousel a {
+    text-decoration: none;
+    color:#fff;
+}
+
+.c1,.c2,.c3 {
+    width: 400px;
+    height: 250px;
+}
+.c1{
+    background-color: red;
+}
+
+.c2{
+    background-color: blue;
+}
+.c3{
+    background-color: green;
 }
