@@ -109,8 +109,7 @@ tr:nth-child(-n+4){
             display: inline-block;  
             width: 200px;  
             height: 20px;  
-            margin: 0 50px;  
-            float: left;  
+            margin: 0 50px;              
             text-align: center;  
             color: #fff;  
             border-radius: 10px;  
