@@ -1,4 +1,4 @@
-body {
+﻿body {
     padding: 0;
     margin: 0;
 }
@@ -145,7 +145,7 @@ tr:nth-child(-n+4) {
         margin-left: 0px;
     }
     25%, 40% {
-        margin-left: -300px;
+        margin-left: -300px;  
     }
     45%, 60% {
         margin-left: -600px;
@@ -184,6 +184,7 @@ tr:nth-child(-n+4) {
 }
 
 .num:nth-child(2) {
+
     margin-right: 30px;
 }
 
