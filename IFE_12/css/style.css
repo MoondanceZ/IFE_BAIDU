@@ -52,21 +52,31 @@ tr:nth-child(-n+4) {
     height: 250px;
     position: relative;
     margin: 20px auto;
+    border-radius: 5px;
+    overflow: hidden;
 }
 
 .carousel ul {
     list-style: none;
-    position: absolute;
-    bottom: 10px;
+    position: absolute;    
     right: 10px;
-    z-index: 99;
+    bottom: 0px;
+    z-index: 10;
 }
 
 .carousel li {
+    text-align: center;
     display: inline-block;
-    margin: 5px;
-    padding: 5px;
+    width: 20px;
+    height: 20px;
     background-color: grey;
+    border-radius: 20px;;
+    opacity: 0.5;
+}
+
+.carousel li:hover {
+    background-color: lightgreen;
+    animation-play-state: paused;
 }
 
 .carousel a {
@@ -74,68 +84,16 @@ tr:nth-child(-n+4) {
     color: #fff;
 }
 
-.c1, .c2, .c3 {
+.carousel img {
+    float: left;
     width: 400px;
     height: 250px;
-    position: absolute;
-    left: 0;
-    top: 0;
-}
-
-.c1 {
-    background-color: red;
-}
-
-.c2 {
-    background-color: blue;
-}
-
-.c3 {
-    background-color: green;
-}
-
-#frame {
-    /*----------图片轮播相框容器----------*/
-    position: absolute; /*--绝对定位，方便子元素的定位*/
-    width: 300px;
-    height: 200px;
-    overflow: hidden; /*--相框作用，只显示一个图片---*/
-    border-radius: 5px;
-}
-
-#dis {
-    /*--绝对定位方便li图片简介的自动分布定位---*/
-    position: absolute;
-    left: -50px;
-    top: -10px;
-    opacity: 0.5;
-}
-
-#dis li {
-    display: inline-block;
-    width: 200px;
-    height: 20px;
-    margin: 0 50px;
-    text-align: center;
-    color: #fff;
-    border-radius: 10px;
-    background: #000;
-}
-
-#photos img {
-    float: left;
-    width: 300px;
-    height: 200px;
-}
-
-#photos {
-    /*---设置总的图片宽度--通过位移来达到轮播效果----*/
-    position: absolute;
-    z-index: 9;
-    width: calc(300px * 5); /*---修改图片数量的话需要修改下面的动画参数*/
 }
 
 .play {
+    position: absolute;
+    z-index: 9;
+    width: calc(400px * 5); /*---修改图片数量的话需要修改下面的动画参数*/
     animation: ma 20s ease-out infinite alternate; /**/
 }
 
@@ -145,84 +103,50 @@ tr:nth-child(-n+4) {
         margin-left: 0px;
     }
     25%, 40% {
-        margin-left: -300px;  
+        margin-left: -400px;  
     }
     45%, 60% {
-        margin-left: -600px;
+        margin-left: -800px;
     }
     65%, 80% {
-        margin-left: -900px;
-    }
-    85%, 100% {
         margin-left: -1200px;
     }
-}
-
-.num {
-    position: absolute;
-    z-index: 10;
-    display: inline-block;
-    right: 10px;
-    top: 165px;
-    border-radius: 100%;
-    background: #f00;
-    width: 25px;
-    height: 25px;
-    line-height: 25px;
-    cursor: pointer;
-    color: #fff;
-    text-align: center;
-    opacity: 0.8;
+    85%, 100% {
+        margin-left: -1600px;
+    }
 }
 
 .num:hover {
     background: #00f;
 }
 
-.num:hover, #photos:hover {
+/*.play:hover {
     animation-play-state: paused;
-}
+}*/
 
-.num:nth-child(2) {
-
-    margin-right: 30px;
-}
-
-.num:nth-child(3) {
-    margin-right: 60px;
-}
-
-.num:nth-child(4) {
-    margin-right: 90px;
-}
-
-.num:nth-child(5) {
-    margin-right: 120px;
-}
-
-#a1:hover ~ #photos {
+.carousel ul li:nth-child(1):hover .play {
     animation: ma1 .5s ease-out forwards;
 }
 
-#a2:hover ~ #photos {
+.carousel ul li:nth-child(2):hover .play {
     animation: ma2 .5s ease-out forwards;
 }
 
-#a3:hover ~ #photos {
+.carousel ul li:nth-child(3):hover .play {
     animation: ma3 .5s ease-out forwards;
 }
 
-#a4:hover ~ #photos {
+.carousel ul li:nth-child(4):hover .play {
     animation: ma4 .5s ease-out forwards;
 }
 
-#a5:hover ~ #photos {
+.carousel ul li:nth-child(5):hover .play {
     animation: ma5 .5s ease-out forwards;
 }
 
 @keyframes ma1 {
     0% {
-        margin-left: -1200px;
+        margin-left: -1600px;
     }
     100% {
         margin-left: -0px;
@@ -231,27 +155,27 @@ tr:nth-child(-n+4) {
 
 @keyframes ma2 {
     0% {
-        margin-left: -1200px;
+        margin-left: -1600px;
     }
     100% {
-        margin-left: -300px;
+        margin-left: -400px;
     }
 }
 
 @keyframes ma3 {
     100% {
-        margin-left: -600px;
+        margin-left: -800px;
     }
 }
 
 @keyframes ma4 {
     100% {
-        margin-left: -900px;
+        margin-left: -1200px;
     }
 }
 
 @keyframes ma5 {
     100% {
-        margin-left: -1200px;
+        margin-left: -1600px;
     }
 }
