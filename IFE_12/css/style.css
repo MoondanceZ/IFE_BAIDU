@@ -76,6 +76,7 @@ tr:nth-child(-n+4) {
 
 .carousel li:hover {
     background-color: lightgreen;
+    cursor: pointer;
     animation-play-state: paused;
 }
 
@@ -124,7 +125,8 @@ tr:nth-child(-n+4) {
     animation-play-state: paused;
 }*/
 
-.carousel ul li:nth-child(1):hover .play {
+.carousel ul li:hover .play {
+    animation-play-state: paused;
     animation: ma1 .5s ease-out forwards;
 }
 
