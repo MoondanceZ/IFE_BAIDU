@@ -56,34 +56,39 @@ tr:nth-child(-n+4) {
     overflow: hidden;
 }
 
-.carousel ul {
-    list-style: none;
-    position: absolute;    
-    right: 10px;
-    bottom: 0px;
-    z-index: 10;
-}
-
-.carousel li {
-    text-align: center;
-    display: inline-block;
+.carousel .num {    
+    position: absolute;
+    right: 20px;
+    bottom: 10px;   
+    text-decoration: none;
+    color: #fff; 
+    text-align: center;    
     width: 20px;
     height: 20px;
     background-color: grey;
     border-radius: 20px;;
     opacity: 0.5;
+    z-index: 10;
 }
 
-.carousel li:hover {
-    background-color: lightgreen;
-    cursor: pointer;
+.carousel .num:hover {
+    background: #00f;
     animation-play-state: paused;
 }
-
-.carousel a {
-    text-decoration: none;
-    color: #fff;
+ 
+.carousel .num:nth-child(1){
+    margin-right: 120px   
 }
+.carousel .num:nth-child(2){
+    margin-right: 90px   
+}
+.carousel .num:nth-child(3){
+    margin-right: 60px   
+}
+.carousel .num:nth-child(4){
+    margin-right: 30px   
+}
+
 
 .carousel img {
     float: left;
@@ -117,31 +122,23 @@ tr:nth-child(-n+4) {
     }
 }
 
-.num:hover {
-    background: #00f;
-}
-
-/*.play:hover {
-    animation-play-state: paused;
-}*/
-
-.carousel ul:nth-child(1):hover ~ .play {    
+.num:nth-child(1):hover ~ .play {    
     animation: ma1 .5s ease-out forwards;
 }
 
-.carousel ul:nth-child(2):hover ~ .play {
+.num:nth-child(2):hover ~ .play {
     animation: ma2 .5s ease-out forwards;
 }
 
-.carousel ul:nth-child(3):hover ~ .play {
+.num:nth-child(3):hover ~ .play {
     animation: ma3 .5s ease-out forwards;
 }
 
-.carousel ul:nth-child(4):hover ~ .play {
+.num:nth-child(4):hover ~ .play {
     animation: ma4 .5s ease-out forwards;
 }
 
-.carousel ul:nth-child(5):hover ~ .play {
+.num:nth-child(5):hover ~ .play {
     animation: ma5 .5s ease-out forwards;
 }
 
