@@ -73,12 +73,12 @@ tr:nth-child(-n+4) {
     border-radius: 20px;;
     opacity: 0.5;
 }
-
+/*
 .carousel li:hover {
     background-color: lightgreen;
     cursor: pointer;
     animation-play-state: paused;
-}
+}*/
 
 .carousel a {
     text-decoration: none;
@@ -125,8 +125,7 @@ tr:nth-child(-n+4) {
     animation-play-state: paused;
 }*/
 
-.carousel ul li:nth-child(1):hover .play {
-    animation-play-state: paused;
+.carousel ul li:nth-child(1):hover .play {    
     animation: ma1 .5s ease-out forwards;
 }
 
