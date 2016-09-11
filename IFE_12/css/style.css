@@ -125,7 +125,7 @@ tr:nth-child(-n+4) {
     animation-play-state: paused;
 }*/
 
-.carousel ul li:hover .play {
+.carousel ul li:nth-child(1):hover .play {
     animation-play-state: paused;
     animation: ma1 .5s ease-out forwards;
 }
