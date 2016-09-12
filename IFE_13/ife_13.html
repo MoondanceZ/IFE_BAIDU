@@ -2,24 +2,26 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <title>Document</title>
+	<meta charset="UTF-8">
+	<title>ife_13</title>
 </head>
 
 <body>
-    <label>请输入北京今天空气质量：<input id="aqi-input" type="text"></label>
-    <button id="button">确认填写</button>
+	<label>请输入北京今天空气质量：<input id="aqi-input" type="text"></label>
+	<button id="button">确认填写</button>
 
-    <div>您输入的值是：<span id="aqi-display">尚无录入</span></div>
+	<div>您输入的值是：<span id="aqi-display">尚无录入</span></div>
 
-    <script type="text/javascript">
+	<script type="text/javascript">
 
-    (function() {
+		(function() {
+			document.getElementById('button').onclick = function(){				
+				document.getElementById('aqi-display').innderText  = document.getElementById('aqi-input').value;
+			}
 
+		})();
 
-    })();
-
-</script>
+	</script>
 </body>
 
 </html>
