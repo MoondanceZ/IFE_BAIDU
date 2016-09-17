@@ -74,7 +74,7 @@
 	var data =[];	
   var $source = document.getElementById('source').childNodes;  
   for (var i = 0; i < $source.length; i++) {
-  	data.push( $source[i].childNodes[0].value);
+  	data.push( $source[i].getElementsByTagName('p').innerHTML);
   }
   return data;
   
