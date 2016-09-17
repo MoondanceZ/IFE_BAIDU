@@ -72,7 +72,7 @@
  */
  function getData() {
 	var data =[];	
-  var $source = document.getElementById('source').childNodes();
+  var $source = document.getElementById('source').childNodes;  
   for (var i = 0; i < $source.length; i++) {
   	data.push( $source[i].childNodes[0].value);
   }
@@ -86,7 +86,7 @@
  * 返回一个排序后的数组
  */
  function sortAqiData(data) {
-
+ 	return data.sort();
  }
 
 /**
@@ -94,8 +94,13 @@
  * 将排好序的城市及空气质量指数，输出显示到id位resort的列表中
  * 格式见ul中的注释的部分
  */
- function render(data) {
-
+ function render(data) { 	
+ 	var $resort=document.getElementById('resort');
+ 	var str='';
+ 	for (var i = 0; i < data.length; i++) {
+ 		str+= '<li>'+ data[i]+'</li>';
+ 	}
+ 	$resort.innerHTML=str;
  }
 
  function btnHandle() {
@@ -105,10 +110,9 @@
  }
 
 
- function init() {
-
+ function init() { 	
   // 在这下面给sort-btn绑定一个点击事件，点击时触发btnHandle函数
-
+  document.getElementById('sort-btn').onclick=btnHandle();
 }
 
 init();
