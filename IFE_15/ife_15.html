@@ -72,17 +72,14 @@
  */
  function getData() {
  	var data =[];	
- 	var $source = document.getElementById('source').childNodes;  
- 	debugger;
- 	for (var i = 0; i < $source.length; i++) {
- 		var temp = $source[i];
- 		debugger;
- 		var city = $source[i].getElementsByTagName('text')[0].innerHTML;
- 		var aqiData = $source[i].getElementsByTagName('p')[0].innerHTML;
- 		data.push([city,aqiData]);
+ 	var $source = document.getElementById('source').getElementsByTagName('li');   	
+ 	for (var i = 0; i < $source.length; i++) { 		
+ 		var city = $source[i].childNodes[0].data.replace('空气质量：', ''); 		
+ 		var aqiData = $source[i].childNodes[1].innerHTML;
+ 		data.push([city,aqiData]); 		
  	}
+ 	console.log(data)
  	return data;
-
  }
 
 /**
