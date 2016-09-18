@@ -88,7 +88,9 @@
  * 返回一个排序后的数组
  */
  function sortAqiData(data) {
- 	return data.sort();
+ 	data.sort(function(a,b){
+ 		return b-a;
+ 	})
  }
 
 /**
