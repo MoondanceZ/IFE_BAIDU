@@ -77,8 +77,7 @@
  		var city = $source[i].childNodes[0].data.replace('空气质量：', ''); 		
  		var aqiData = $source[i].childNodes[1].innerHTML;
  		data.push([city,aqiData]); 		
- 	}
- 	console.log(data)
+ 	} 	
  	return data;
  }
 
@@ -91,6 +90,7 @@
  	data.sort(function(a,b){
  		return a[1]-b[1];
  	})
+ 	return data;
  }
 
 /**
