@@ -53,25 +53,18 @@
  */
  function addAqiData() {
   var city = document.getElementById('aqi-city-input').value;
-  if (isChinese(city||isEnglish(city)){
+  if (!checkCity(city)){
     document.querySelector('#city-error').style.display='inline';
   }
   var value =document.getElementById('aqi-value-input').value;	
  }
 
- function isChinese(value){
-  var reg=/^[\u0391-\uFFE5]$/;
+ function checkCity(value){
+  var reg=/^[A-Za-z\u4E00-\u9FA5]+$/;
   if (reg.test(value)) {
-    return false;
+    return true;
   }
-  return true;
- }
- function isEnglish(value){
-  var reg = /^[A-Za-z]$/;
-  if (reg.test(value)) {
-    return false
-  }
-  return true;
+  return false;
  }
 
 /**
