@@ -65,7 +65,9 @@ var city= function(name, value){
     document.querySelector('#value-error').style.display='inline';
     isError=true;
   }
-  aqiData.push(city(cityName,cityValue));
+  if(!isError){
+    aqiData.push(city(cityName,cityValue));
+  }  
  }
 
 //中英文
