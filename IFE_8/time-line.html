@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link href="css/style.css" rel="stylesheet">
+    <style>
+        .left {
+            height: 36px;
+            background-color: #caf7cd;
+            line-height: 36px;
+        }
+
+        .right {
+            height: 36px;
+            background-color: #738de2;
+            border-left: 2px solid #a1a2a5;
+            line-height: 36px;
+        }
+        .right::before{
+            position: absolute;
+            content: '';
+            width: 20px;
+            height: 20px;
+            background-image: url(icon/沙漏等待.png);
+            background-size: 20px 20px;
+            left: -11px;
+            top: 8px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="col-6 left">左边</div>
+                <div class="col-6 right">右边
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
