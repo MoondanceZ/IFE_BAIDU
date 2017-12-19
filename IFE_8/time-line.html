@@ -52,6 +52,8 @@
             line-height: 46px;
             border-right: 1px solid #a1a2a5;
             padding-right: 15px;
+            text-align: right;
+            color: #596161;
         }
 
         .right {
@@ -60,17 +62,56 @@
             border-left: 1px solid #a1a2a5;
             line-height: 46px;
             padding-left: 15px;
+            color: #596161;
         }
 
-        .right::before {
+        .mid {
             position: absolute;
-            content: '';
             width: 26px;
             height: 26px;
-            background-image: url(icon/沙漏等待.png);
             background-size: 26px 26px;
-            left: -14px;
-            top: 10px;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-image: url(icon/沙漏等待.png);
+            z-index: 99;
+        }
+
+        .amount {
+            font-size: 12px;
+            color: #8b8989;
+        }
+
+        .day-left,
+        .day-right {
+            height: 16px;
+            line-height: 16px;
+        }
+
+        .day-left {
+            text-align: right;
+            border-right: 1px solid #a1a2a5;
+        }
+
+        .day-right {
+            border-left: 1px solid #a1a2a5;
+        }
+
+        .day {
+            font-size: 10px;
+            color: #8b8989;
+        }
+
+        .mid-day-total {
+            position: absolute;
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background-color: #a1a2a5;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 99;
         }
     </style>
 </head>
@@ -92,8 +133,88 @@
     <div class="container">
         <div class="row">
             <div class="col-12">
-                <div class="col-6 left">左边</div>
-                <div class="col-6 right">右边
+                <div class="col-6 day-left">
+                    <span class="day">18日</span>
+                </div>
+                <div class="mid-day-total"></div>
+                <div class="col-6 day-right">
+                    <span class="day">190.00</span>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <div class="col-6 left">
+                    <span class="amount">78.00</span>
+                    左边
+                </div>
+                <div class="mid"></div>
+                <div class="col-6 right">
+                    右边
+                    <span class="amount">90.00</span>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <div class="col-6 left">
+                    <span class="amount">78.00</span>
+                    左边
+                </div>
+                <div class="mid"></div>
+                <div class="col-6 right">
+                    右边
+                    <span class="amount">90.00</span>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <div class="col-6 left">
+                    <span class="amount">78.00</span>
+                    左边
+                </div>
+                <div class="mid"></div>
+                <div class="col-6 right">
+                    右边
+                    <span class="amount">90.00</span>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <div class="col-6 day-left">
+                    <span class="day">17日</span>
+                </div>
+                <div class="mid-day-total"></div>
+                <div class="col-6 day-right">
+                    <span class="day">100.00</span>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <div class="col-6 left">
+                    <span class="amount">78.00</span>
+                    左边
+                </div>
+                <div class="mid"></div>
+                <div class="col-6 right">
+                    右边
+                    <span class="amount">90.00</span>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <div class="col-6 left">
+                    <span class="amount">78.00</span>
+                    左边
+                </div>
+                <div class="mid"></div>
+                <div class="col-6 right">
+                    右边
+                    <span class="amount">90.00</span>
                 </div>
             </div>
         </div>
