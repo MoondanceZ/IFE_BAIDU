@@ -51,6 +51,7 @@ body {
 .row {
     margin-right: -15px;
     margin-left: -15px;
+    position: relative;
 }
 
 .col-1,

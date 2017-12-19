@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>add-record</title>
+
+    <link href="css/style.css" rel="stylesheet">
+    <style>
+        .close {
+            position: absolute;
+            display: inline-block;
+            width: 24px;
+            height: 24px;
+            overflow: hidden;
+            top: 8px;
+            left: 24px;
+            /* background-color: purple; */
+        }
+
+        .close::after,
+        .close::before {
+            content: '';
+            width: 100%;
+            height: 2px;
+            position: absolute;
+            background-color: #a1a2a5;
+            top: 50%;
+            left: 0;
+            margin-top: -1px;
+        }
+
+        .close::after {
+            transform: rotate(45deg);
+        }
+
+        .close::before {
+            transform: rotate(-45deg);
+        }
+
+        .add-header {
+            padding-top: 8px 0;
+            margin-bottom: 4px;
+            height: 36px;
+        }
+
+        .add-income,
+        .add-expend {
+            margin: 8px 0;
+            font-size: 24px;
+            height: 24px;
+            line-height: 24px;
+        }
+
+        .add-income {
+            text-align: right;
+        }
+
+        .active {
+            color: #62dfed;
+        }
+
+        .add-type {
+            height: 46px;
+            background-color: #62dfed;
+        }
+
+        .type-icon {
+            height: 36px;
+            width: 36px;
+            margin-top: 5px;
+            margin-left: 5px;
+        }
+
+        .type-info,
+        .type-amount {
+            color: #77787a;
+            line-height: 46px;
+        }
+
+        .type-amount {
+            text-align: right;
+            padding-right: 30px;
+        }
+
+        .type-icon-list img {
+            width: 36px;
+            height: 36px;
+        }
+
+        .type-icon-list-icon1 {
+            padding-left: 1px;
+            padding-right: 1px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row add-header">
+            <i class="close"></i>
+            <div class="col-6 add-income active">收入</div>
+            <div class="col-6 add-expend">支出</div>
+        </div>
+        <div class="row add-type">
+            <div class="col-2 col-md-1">
+                <img class="type-icon" src="icon/列表.png" alt="" srcset="">
+            </div>
+            <div class="col-2 col-md-1 type-info">
+                购物
+            </div>
+            <div class="col-8 col-md-10 type-amount">
+                996.00
+            </div>
+        </div>
+        <div class="row type-icon-list">
+            <div class="col-2 type-icon-list-icon">
+                <img src="icon/列表.png" alt="" srcset="">
+            </div>
+            <div class="col-2 type-icon-list-icon">
+                <img src="icon/列表.png" alt="" srcset="">
+            </div>
+            <div class="col-2 type-icon-list-icon">
+                <img src="icon/列表.png" alt="" srcset="">
+            </div>
+            <div class="col-2 type-icon-list-icon">
+                <img src="icon/列表.png" alt="" srcset="">
+            </div>
+            <div class="col-2 type-icon-list-icon">
+                <img src="icon/列表.png" alt="" srcset="">
+            </div>
+            <div class="col-2 type-icon-list-icon">
+                <img src="icon/列表.png" alt="" srcset="">
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
