@@ -8,6 +8,44 @@
 
     <link href="css/style.css" rel="stylesheet">
     <style>
+        .header {
+            /* background-image:  */
+            background-color: hsla(186, 81%, 66%, 0.418);
+            height: 46px;
+            /* margin-bottom: 23px; */
+            position: relative;
+        }
+
+        .total {
+            height: 23px;
+        }
+
+        .income>p,
+        .expend>p {
+            margin: 0;
+            padding: 0;
+            color: #8b8989;
+        }
+
+        .income>p:first-child,
+        .expend>p:first-child {
+            font-size: 12px;
+        }
+
+        .expend>p {
+            text-align: right;
+        }
+
+        .avatar {
+            position: absolute;
+            top: 100%;
+            left: 50%;
+            max-width: 46px;
+            height: auto;
+            border-radius: 50%;
+            transform: translate(-50%, -50%);
+        }
+
         .left {
             height: 46px;
             /* background-color: #caf7cd; */
@@ -23,7 +61,8 @@
             line-height: 46px;
             padding-left: 15px;
         }
-        .right::before{            
+
+        .right::before {
             position: absolute;
             content: '';
             width: 26px;
@@ -37,6 +76,19 @@
 </head>
 
 <body>
+    <div class="header">
+        <img class="avatar" src="image/avatar.jpg" alt="avatar" srcset="">
+    </div>
+    <div class="total">
+        <div class="col-6 income">
+            <p>当月收入</p>
+            <p>2345</p>
+        </div>
+        <div class="col-6 expend">
+            <p>当月支出</p>
+            <p>5678</p>
+        </div>
+    </div>
     <div class="container">
         <div class="row">
             <div class="col-12">
